@@ -1,4 +1,5 @@
-# JMeter
+#  JMeter
+
 Учебный скрипт по JMetr
 В данном проекте представлен учебный скрипт, 
 выполненный в с помощью  JMetr.
@@ -6,7 +7,7 @@
 0 Открыть главную страницу в системе
 Get http://testlink/login.php
 -------------------
-1 Зайти в систему
+# 1 Зайти в систему
 ----------------------
 Post http://testlink/login.php
 reqURI: 
@@ -20,17 +21,17 @@ Get http://testlink/index.php
 Get http://testlink/lib/general/navBar.php
 Get http://testlink/lib/general/mainPage.php
 ----------------------------------------
-2.Кликнуть на кнопку [Test specification]
+# 2.Кликнуть на кнопку [Test specification]
 ----------------------------------------
 Get http://testlink/lib/general/frmWorkArea.php?feature=editTc
 Get http://testlink/lib/general/staticPage.php?key=editTc
 Get http://testlink/lib/testcases/listTestCases.php?feature=edit_tc
 ----------------------------
-3.Кликнуть на [Suit 1]
+# 3.Кликнуть на [Suit 1]
 -------------------------
 Get http://testlink/lib/testcases/archiveData.php?print_scope=test_specification&edit=testsuite&level=testsuite&id=3&form_token=1933091267&
 -------------------------
-4 Кликнуть на  кнопку [Create]
+# 4 Кликнуть на  кнопку [Create]
 -----------------------
 Post http://testlink/lib/testcases/tcEdit.php
 containerID: 3
@@ -44,7 +45,7 @@ Get http://testlink/third_party/fckeditor/editor/fckeditor.html?InstanceName=pre
 InstanceName: preconditions
 Toolbar: tl_default
 ----------------------------------------------
-5 Заполнить  все поля тест-кейса и кликнуть на кнопку  [Create]
+# 5 Заполнить  все поля тест-кейса и кликнуть на кнопку  [Create]
 ----------------------------------------------------------------
 Post http://testlink/lib/testcases/tcEdit.php?containerID=3
 
@@ -63,7 +64,7 @@ ot_newLeft:
 ot_newRight: 
 do_create: do_create
 ----------------------------------------------------
-6.Найти в дереве и кликнуть на название тест-кейса
+# 6.Найти в дереве и кликнуть на название тест-кейса
 -----------------------------------------------------
 Get http://testlink/lib/testcases/archiveData.php?
 version_id=undefined&edit=testcase&id=9&form_token=2123080428
@@ -74,7 +75,7 @@ id: 9
 form_token: 2123080428
 -----------------------------------
 
-7.Заполнить поля и кликнуть кнопку [Save]
+# 7.Заполнить поля и кликнуть кнопку [Save]
 --------------------------------------------
 Post http://testlink/lib/testcases/tcEdit.php
 
@@ -100,7 +101,7 @@ fckeditor.html?InstanceName=expected_results&Toolbar=tl_default
 InstanceName: expected_results
 Toolbar: tl_default
 
-8. Удалить нужный тест-кейс
+# 8. Удалить нужный тест-кейс
 --------------------------------
 Post http://testlink/lib/testcases/tcEdit.php
 
@@ -133,7 +134,7 @@ filter_testcase_name:
 filter_toplevel_testsuite: 0
 filter_execution_type: 0
 
-9. Кликнуть Logut
+# 9. Кликнуть Logut
 --------------------------------
 Get http://testlink/logout.php
 
