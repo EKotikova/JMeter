@@ -5,10 +5,10 @@
 выполненный в с помощью  JMetr.
 По следующему сценарию в testlink:
 
-# 0 Открыть главную страницу в системе
+# 0. Открыть главную страницу в системе
 Get http://testlink/login.php
 -------------------
-# 1 Зайти в систему
+# 1. Зайти в систему
 ----------------------
 Post http://testlink/login.php
 reqURI: 
@@ -32,7 +32,7 @@ Get http://testlink/lib/testcases/listTestCases.php?feature=edit_tc
 -------------------------
 Get http://testlink/lib/testcases/archiveData.php?print_scope=test_specification&edit=testsuite&level=testsuite&id=3&form_token=1933091267&
 -------------------------
-# 4 Кликнуть на  кнопку [Create]
+# 4. Кликнуть на  кнопку [Create]
 -----------------------
 Post http://testlink/lib/testcases/tcEdit.php
 containerID: 3
@@ -46,7 +46,7 @@ Get http://testlink/third_party/fckeditor/editor/fckeditor.html?InstanceName=pre
 InstanceName: preconditions
 Toolbar: tl_default
 ----------------------------------------------
-# 5 Заполнить  все поля тест-кейса и кликнуть на кнопку  [Create]
+# 5. Заполнить  все поля тест-кейса и кликнуть на кнопку  [Create]
 ----------------------------------------------------------------
 Post http://testlink/lib/testcases/tcEdit.php?containerID=3
 
